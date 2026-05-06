@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antipode Globe</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main id="app">
+      <section class="panel">
+        <div class="brand">
+          <span class="mark"></span>
+          <span>Antipode Globe</span>
+        </div>
+        <h1>See the other side of Earth overlaid on this one.</h1>
+        <div class="controls">
+          <button id="argentina-button" type="button">Argentina</button>
+          <button id="china-button" type="button">China</button>
+          <button id="reset-button" type="button" aria-label="Reset view">Reset</button>
+        </div>
+        <dl>
+          <div>
+            <dt>White</dt>
+            <dd>current-side country outlines</dd>
+          </div>
+          <div>
+            <dt>Cyan</dt>
+            <dd>antipode overlay from the opposite side</dd>
+          </div>
+        </dl>
+      </section>
+      <canvas id="globe"></canvas>
+      <div id="status" role="status">Loading coastlines...</div>
+    </main>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
