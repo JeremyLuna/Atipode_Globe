@@ -21,3 +21,7 @@ Then open [http://localhost:8020](http://localhost:8020).
 ```sh
 npm run build
 ```
+
+## Deploy
+
+Pushes to `main` deploy automatically through GitHub Actions. In the GitHub repository settings, set Pages to use **GitHub Actions** as the build and deployment source.
